@@ -5,18 +5,27 @@ connections:
       min_messages: warning
       host: localhost
       port: 26257
-      user: root
+      user: roach
+      password: system
+      ssl:
+        ca: home/ubuntu/certs/ca.crt
       disable_cockroachdb_telemetry: true
     arunit_without_prepared_statements:
       min_messages: warning
       prepared_statements: false
       host: localhost
       port: 26257
-      user: root
+      user: roach
+      password: system
+      ssl:
+        ca: home/ubuntu/certs/ca.crt
       disable_cockroachdb_telemetry: true
     arunit2:
       min_messages: warning
       host: localhost
       port: 26257
-      user: root
+      user: roach
+      password: system
+      ssl:
+        ca: home/ubuntu/certs/ca.crt
       disable_cockroachdb_telemetry: true

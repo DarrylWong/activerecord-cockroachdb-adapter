@@ -90,7 +90,7 @@ To run a specific test case, use minitest's `-n` option to run tests that match 
 TEST_FILES="test/cases/adapter_test.rb" TESTOPTS=`-n=/test_indexes/` bundle exec rake test
 ```
 
-`test/config.yml` assumes CockroachDB will be running at localhost:26257 with a root user. Make changes to `test/config.yml` as needed.
+`test/config.yml` assumes CockroachDB will be running at localhost:26257 with user roach and password system. Make changes to `test/config.yml` as needed.
 
 ### Run Tests from a Backup
 
